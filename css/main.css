@@ -1,0 +1,111 @@
+/* Global Reset */
+* {
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-color: #FFF;
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.content-panel {
+   padding:5px;
+   margin:10px;
+}
+
+#site-header {
+   padding-right: 10px;
+   padding-top: 5px;
+   padding-bottom: 10px;
+   background: #eaeaea;
+   text-align: left;
+   font-weight: bold;
+   margin-bottom: 15px;
+}
+
+#site-header .super {
+   position: relative;
+   top: -30px;
+   font-size: 1.5em;
+   color: #777;
+   font-weight: 400;
+   margin-left: 10px;
+}
+
+#links {
+   float: right;
+}
+
+#links a.extra {
+   text-decoration: none;
+   color: #aaa;
+   margin-left: 1em;
+   font-size: 1.1em;
+}
+
+#links a.extra:hover {
+   color: #000;
+}
+
+#juxta-logo {
+   padding-left: 15px;
+}
+
+.edition-info {
+   border: 1px solid #dddddd;
+   padding: 15px;
+   margin: 0px 12px;
+   text-align: left;
+}
+
+.book-cover {
+   float: left;
+   width: 25%;
+}
+
+.img-responsive {
+   display: block;
+   height: auto;
+   max-width: 100%;
+   vertical-align: middle;
+   border: 0;
+}
+
+#edition-data {
+   width: 75%;
+   float: left;
+}
+
+#edition-data h1 {
+   font-size: 36px;
+   font-weight: 500;
+   margin: 10px;
+}
+#edition-data p {
+   margin: 10px;
+   font-size: 1.3em;
+   font-weight: 200;
+}
+
+#docs-panel {
+   margin-top: 10px;
+}
+
+#docs-panel h3 {
+   font-size: 24px;
+}
+
+#docs-panel ul {
+   list-style: none;
+   margin-left: 20px;
+}
+
+#docs-panel a {
+   text-decoration: none;
+   font-weight: 500;
+   color: #777;
+}
+#docs-panel a:hover {
+   color: #000;
+}

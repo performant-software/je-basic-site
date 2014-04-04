@@ -1,0 +1,29 @@
+---
+layout: default
+title: Your New Jekyll Site
+---
+
+<div id="home">
+   <div class="edition-info">
+	   <div class="book-cover">
+	     <img alt="Edition cover" class="img-responsive" src="/images/edition-cover.jpg">
+		</div>
+		<div id="edition-data">
+		   <!-- must loop to access editions.yml, but there should only be one entry. get it -->
+         {% assign edition = first(site.data.editions) %}
+		   <h1>{{ edition.title }}</h1>
+         <p>{{ edition.description }}</p>
+		</div>
+		<div style="clear:both;"></div>
+	</div>
+   
+	<div class="edition-info" id="docs-panel">
+      <h3>Documents</h3>
+	    <ul>
+          {% for document in site.data.documents %}
+		      <li><a href="{{ document.url }}">{{ document.name}}</a></li>
+          {% endfor %}
+	    </ul>
+	</div>
+
+</div>
