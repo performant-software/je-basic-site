@@ -9,10 +9,11 @@ title: Your New Jekyll Site
 	     <img alt="Edition cover" class="img-responsive" src="/images/edition-cover.jpg">
 		</div>
 		<div id="edition-data">
-		   <!-- must loop to access editions.yml, but there should only be one entry. get it -->
-         {% assign edition = first(site.data.editions) %}
-		   <h1>{{ edition.title }}</h1>
-         <p>{{ edition.description }}</p>
+         {% for edition in site.data.editions %}
+            <h1>{{ edition.title }}</h1>
+            <p>{{ edition.description }}</p>
+            {% break %}
+         {% endfor %}
 		</div>
 		<div style="clear:both;"></div>
 	</div>
@@ -21,7 +22,7 @@ title: Your New Jekyll Site
       <h3>Documents</h3>
 	    <ul>
           {% for document in site.data.documents %}
-		      <li><a href="{{ document.url }}">{{ document.name}}</a></li>
+		      <li><a href="{{ document.url }}">{{ document.title}}</a></li>
           {% endfor %}
 	    </ul>
 	</div>
