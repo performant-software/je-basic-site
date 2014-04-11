@@ -149,3 +149,18 @@ div.page {
    overflow-y: auto;
 }
 
+.page-image {
+   width:50%;
+	float: left;
+   padding-left: 15px;
+}
+
+.dragon {
+	margin-top: 20px;
+	margin-bottom: 20px;
+   width: 450px;
+   height: 582px;
+   background: white;
+	box-shadow: 3px 3px 4px #000;
+}
+
