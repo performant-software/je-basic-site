@@ -52,7 +52,7 @@ body {
    padding-left: 15px;
 }
 
-.edition-info {
+.edition-info{
    border: 1px solid #dddddd;
    padding: 15px;
    margin: 0px 12px;
@@ -109,3 +109,40 @@ body {
 #docs-panel a:hover {
    color: #000;
 }
+
+#document-content {
+   border: 1px solid #dddddd;
+   padding: 0px;
+   margin: 0px 12px;
+   text-align: left;
+}
+
+.doc-title {
+   padding:10px;
+}
+
+.toolbar {
+   padding: 10px 10px;
+	background-color: #efefef;
+	margin-bottom: 15px;
+}
+
+.document-viewport {
+   background: #dcdcdc;
+   padding:15px;
+}
+
+div.page {
+   margin-top: 20px;
+   margin-bottom: 20px;
+   padding-top: 60px;
+   padding-left: 30px;
+   padding-right: 30px;
+   padding-bottom: 80px;
+   background: white;
+   width: 600px;
+   height: 582px;
+   box-shadow: 3px 3px 4px #000;
+   overflow-y: auto;
+}
+
