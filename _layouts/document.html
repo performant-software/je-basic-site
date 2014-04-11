@@ -11,7 +11,7 @@
 		  <script>
 		      $( function() {
                // initialize sea dragon image zoom
-			      _.each( this.$('.dragon'), function( imageDiv ) {
+			      $('.dragon').each( function( idx, imageDiv ) {
 		            OpenSeadragon({
 		               id : imageDiv.id,
 		               prefixUrl : "/images/openseadragon/",
@@ -34,7 +34,7 @@
 	 </div>
     
 	 <div id="document-content">
-	   <h1>{{ page.title }}</h1>
+	   <h1 class="doc-title">{{ page.title }}</h1>
 	 	<div class="toolbar">
 		   <div class="btn-group">
 			  <button type="button" class="btn btn-default active diplomatic-view-button">Diplomatic View</button>
