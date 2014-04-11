@@ -6,6 +6,21 @@
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="/css/main.css">
+		  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		  <script src="/javascripts/openseadragon.js"></script>
+		  <script>
+		      $( function() {
+               // initialize sea dragon image zoom
+			      _.each( this.$('.dragon'), function( imageDiv ) {
+		            OpenSeadragon({
+		               id : imageDiv.id,
+		               prefixUrl : "/images/openseadragon/",
+		               tileSources : $(imageDiv).attr("data-tile-source-url"),
+		               maxZoomPixelRatio : 5
+		            });
+	      	   });
+			   });
+		  </script>
     </head>
     <body>
 
