@@ -1,3 +1,4 @@
 name: Juxta Editions Publication
 markdown: redcarpet
 pygments: true
+exclude: [_work]
