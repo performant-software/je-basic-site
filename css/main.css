@@ -9,6 +9,10 @@ body {
    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+.hidden {
+   display: none;
+}
+
 .content-panel {
    padding:5px;
    margin:10px;
@@ -124,7 +128,6 @@ body {
 .toolbar {
    padding: 10px 10px;
 	background-color: #efefef;
-	margin-bottom: 15px;
 }
 
 .document-viewport {
