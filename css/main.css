@@ -147,6 +147,7 @@ div.page {
    height: 582px;
    box-shadow: 3px 3px 4px #000;
    overflow-y: auto;
+	box-sizing: border-box;
 }
 
 .page-image {
@@ -166,4 +167,6 @@ div.page {
 .image-spacer{
    width:50%;
    float:left;
+   height: 600px;
+	box-sizing: border-box;
 }
