@@ -147,7 +147,6 @@ div.page {
    height: 582px;
    box-shadow: 3px 3px 4px #000;
    overflow-y: auto;
-	float: left;
 }
 
 .page-image {
