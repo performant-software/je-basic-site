@@ -19,6 +19,28 @@
 		               maxZoomPixelRatio : 5
 		            });
 	      	   });
+	      	   
+	      	   var toggleViewButtons = function( clicked ) {
+                  if( clicked == "diplomatic" ) {
+                     this.readingViewButton.removeClass("active");
+                     this.diplomaticViewButton.addClass("active");
+                  } else {
+                     this.diplomaticViewButton.removeClass("active");
+                     this.readingViewButton.addClass("active");
+                  }
+               };
+	      	   
+	      	   $(".diplomatic-view").on("click", function() {
+                  toggleViewButtons("diplomatic");
+                  $(".diplomatic").removeClass("hidden");
+                  $(".reading").addClass("hidden");
+               });
+      
+               $(".diplomatic-view").on("click", function() {
+                  toggleViewButtons("reading");
+                  $(".diplomatic").addClass("hidden");
+                  $(".reading").removeClass("hidden");
+               });
 			   });
 		  </script>
     </head>
