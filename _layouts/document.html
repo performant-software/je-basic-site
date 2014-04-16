@@ -5,16 +5,16 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>{{ page.title }}</title>
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="css/main.css">
 		  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-		  <script src="/javascripts/openseadragon.js"></script>
+		  <script src="javascripts/openseadragon.js"></script>
 		  <script>
 		      $( function() {
                // initialize sea dragon image zoom
 			      $('.dragon').each( function( idx, imageDiv ) {
 		            OpenSeadragon({
 		               id : imageDiv.id,
-		               prefixUrl : "/images/openseadragon/",
+		               prefixUrl : "images/openseadragon/",
 		               tileSources : $(imageDiv).attr("data-tile-source-url"),
 		               maxZoomPixelRatio : 5
 		            });
@@ -47,7 +47,7 @@
     <body>
 
 	 <div id="site-header">
-	    <a href="http://juxta-editions.herokuapp.com/"><img alt="Juxta logo" id="juxta-logo" src="/images/juxta-logo.png" /></a><span class="super">Editions</span>
+	    <a href="http://juxta-editions.herokuapp.com/"><img alt="Juxta logo" id="juxta-logo" src="images/juxta-logo.png" /></a><span class="super">Editions</span>
 		 <div id="links">
             <a class="extra" href="/">Edition Home</a>
        </div>
