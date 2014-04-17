@@ -1,72 +1,11 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="/css/main.css">
-		  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-		  <script src="/javascripts/openseadragon.js"></script>
-		  <script>
-		      $( function() {
-               // initialize sea dragon image zoom
-			      $('.dragon').each( function( idx, imageDiv ) {
-		            OpenSeadragon({
-		               id : imageDiv.id,
-		               prefixUrl : "/images/openseadragon/",
-		               tileSources : $(imageDiv).attr("data-tile-source-url"),
-		               maxZoomPixelRatio : 5
-		            });
-	      	   });
-	      	   
-	      	   var toggleViewButtons = function( clicked ) {
-                  if( clicked == "diplomatic" ) {
-                     $(".reading-view-button").removeClass("active");
-                     $(".diplomatic-view-button").addClass("active");
-                  } else {
-                     $(".diplomatic-view-button").removeClass("active");
-                     $(".reading-view-button").addClass("active");
-                  }
-               };
-	      	   
-	      	   $(".diplomatic-view-button").on("click", function() {
-                  toggleViewButtons("diplomatic");
-                  $(".diplomatic").removeClass("hidden");
-                  $(".reading").addClass("hidden");
-               });
-      
-               $(".reading-view-button").on("click", function() {
-                  toggleViewButtons("reading");
-                  $(".diplomatic").addClass("hidden");
-                  $(".reading").removeClass("hidden");
-               });
-			   });
-		  </script>
+		{{ include_seadragon }}
     </head>
     <body>
-
-	 <div id="site-header">
-	    <a href="http://juxta-editions.herokuapp.com/"><img alt="Juxta logo" id="juxta-logo" src="/images/juxta-logo.png" /></a><span class="super">Editions</span>
-		 <div id="links">
-            <a class="extra" href="/">Edition Home</a>
-       </div>
-	 </div>
-    
-	 <div id="document-content">
-	   <h1 class="doc-title">{{ page.title }}</h1> 
-	 	<div class="toolbar">
-		   <div class="btn-group">
-			  <button type="button" class="btn active diplomatic-view-button">Diplomatic View</button>
-			  <button type="button" class="btn reading-view-button">Inline View</button>
-		  </div>
-		</div> 
-
-      <div class="document-viewport">
-         {{ content }}
-      </div>
-
-	 </div>
-
+		 <div id="document-content">
+	         {{ content }}
+	      </div>
     </body>
 </html>
